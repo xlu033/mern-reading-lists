@@ -1,6 +1,11 @@
 {
     "git.ignoreLimitWarning": true,
     "cSpell.words": [
+<<<<<<< HEAD
+        "browserslist",
+        "collpase",
+=======
+>>>>>>> 18fc9a7e177b794d61d4635722a27ebc8d8e8443
         "dbname",
         "mongodb"
     ]
