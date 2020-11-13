@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
 import DatePicker from '../react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -41,6 +42,7 @@ export default class CreateBook extends Component {
       .catch((error) => {
         console.log(error);
       })
+      
     }
   
     onChangeUsername(e) {
@@ -100,9 +102,10 @@ export default class CreateBook extends Component {
     
       console.log(book);
       
+
       axios.post('http://localhost:5000/books/add', book)
           .then(res => console.log(res.data));
-      
+  
       window.location = '/';
     }
   
